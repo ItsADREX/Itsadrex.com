@@ -1,0 +1,111 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #363846, #1a385a); /* Light black to dark blue gradient */
+}
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .nav-links, .auth-buttons {
+        display: none;
+    }
+    /* Additional responsive styles can be added here */
+}
+
+/* ... other styles ... */
+
+.intro, .what-i-do, .my-projects {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.learn-more, .youtube-channel, .watch-video {
+    background-color: #90ee90; /* Light green for buttons */
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+/* ... additional responsive styles ... */
+
+
+/* ... other styles ... */
+
+.intro-portfolio {
+    color: #fff; /* For white text */
+    background-color: #121212; /* Dark background for the intro section */
+    padding: 40px;
+}
+
+.content-portfolio {
+    color: #fff;
+    background: linear-gradient(to right, #333, #1e5799); /* Gradient background for content */
+    padding: 40px;
+}
+
+/* ... other button styles ... */
+
+.learn-more {
+    background-color: #90ee90; /* Light green for buttons */
+    /* ... other styles ... */
+}
+
+/* ... additional responsive styles ... */
