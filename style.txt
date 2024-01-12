@@ -1,0 +1,281 @@
+/* General Body Styling */
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    height: 100%; /* Full height */
+    margin: 0;}
+
+body {
+    background-image: url('Images/BG1.png'); /* Update with the correct path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    padding-top: 70px; /* Adjusted for fixed header */
+    padding-bottom: [height of footer];
+}
+
+/* Header and Navigation Bar Styling */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Header fixed at the top */
+    top: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    z-index: 1000; /* Ensures header is above other elements */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center navbar items */
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    left: 20px; /* Position logo to the left */
+    top: 10px; /* Adjust as needed */
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed to fit the navbar */
+    width: auto; /* Maintain aspect ratio */
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 2px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 2px 0;
+    background-color: black;
+}
+.nav-links, .auth-buttons {
+    display: flex;
+}
+
+.nav-links li, .auth-buttons a {
+    margin-left: 25px;
+    list-style-type: none; /* Removes bullet points */
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 84px; /* Adjusted to be below the header */
+    left: 0;
+    right: 0;
+}
+.nav-links li{
+    margin-left: 5%;
+    padding: 2%;
+}
+.nav-links li:hover {
+    background-color: #3c80b0d1;  
+}
+
+.auth-buttons a {
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+.auth-buttons{
+    position: relative;
+    display: inline-block;
+    left: 85%;
+    top: -40px;
+}
+/* Footer Styling */
+footer {
+    position: absolute;
+    bottom: 1;
+    width: 100%;
+    height: [height of footer]; /* Footer height */
+    top: 1080px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    margin-right: 10px;
+}
+
+
+.learn-more, .youtube-link, .project-link {
+    background-color: #1a75ff; /* Button color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.learn-more:hover, .youtube-link:hover, .project-link:hover {
+    background-color: #0047b3; /* Button hover color */
+}
+
+.section-divider {
+    margin: 20px 0;
+    border-bottom: 2px solid #ddd; /* Change color as needed */
+    padding-bottom: 20px;
+}
+
+/* Add margin for vertical spacing */
+.what-i-do, .my-projects {
+    margin-bottom: 40px; /* Adjust as needed */
+    color: #FFFFFF;
+}
+
+/* Adjust spacing around headings, paragraphs, and links */
+h2, h1, p, a {
+    margin-bottom: 20px; /* Adds space below each element */
+}
+
+/* Ensure buttons have enough room and do not overlap */
+.learn-more, .youtube-link, .project-link {
+    display: inline-block; /* Allows to control spacing around buttons */
+    margin-right: 10px; /* Adds space to the right of each button */
+    
+}
+
+.what-i-do {
+    background-color: rgb(51, 85, 85);
+    width: 60vmax;
+    height: 15vmax;
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+    top: 125px;
+    margin-left: 20%;
+    border-radius: 15px;
+    
+}
+
+.what-i-do li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.section-class {
+    background-color: #f2f2f2; /* Replace with your preferred color or use background-image for images */
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between; /* This separates the child elements */
+    align-items: center; 
+    padding: 10px;
+  }
+  
+.video-container {
+    width: 50%; /* Adjust the width as necessary */
+    padding: 20px; /* This adds space around the video */
+    position: relative;
+    top: 100px;
+  }
+  
+
+/* Rounded border */
+hr.rounded {
+    border-top: 5px solid #13263a;
+    border-radius: 5px;
+  }
+
+
+  /* Responsive Design */
+@media screen and (max-width: 600px) {
+    .navbar {
+        justify-content: space-between; /* Revert to space-between for smaller screens */
+    }
+
+    .logo {
+        position: static; /* Reset logo position on smaller screens */
+        margin: 0 auto; /* Center logo on smaller screens */
+    }
+
+    .navbar, .nav-links, .auth-buttons {
+        width: 100%; /* Full width for mobile view */
+        text-align: center; /* Center elements */
+    }
+
+    .logo img {
+        display: block; /* Center logo image */
+        margin: 0 auto; /* Auto margins for centering */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        right: 20px; /* Place menu on the top right */
+    }
+
+    .nav-links, .auth-buttons {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8); /* Background for menu */
+    }
+
+    .nav-links li, .auth-buttons a {
+        display: block; /* Stack the links */
+        margin-bottom: 10px;
+        text-align: center; /* Center-align the text */
+        padding: 10px 20px; /* Add padding for touch friendliness */
+        border-bottom: 1px solid #ddd; /* Optional: Add a separator */
+    }
+    .nav-links.active, .auth-buttons.active {
+        display: flex; /* Show when active */
+        position: absolute;
+        top: 60px; /* Below the header */
+        width: 100%;
+    }
+    .hamburger-menu span {
+        width: 25px;
+        height: 3px;
+    }
+
+    .what-i-do {
+        
+        width: 60%;
+        height: 52%;
+        
+        
+    }
+    
+}

@@ -1,111 +1,580 @@
-body {
-    font-family: 'Arial', sans-serif;
+/* General Body Styling */
+*{
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #363846, #1a385a); /* Light black to dark blue gradient */
+    /*box-sizing: border-box;  Ensures padding doesn't affect overall width */
 }
 
+
+body {
+    /*background-image: url('Images/BG1.png'); /* Update with the correct path */
+    background:  rgba(10, 18, 41, 0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+    padding-top: 70px; /* Adjusted for fixed header */
+    padding-bottom: [height of footer];
+}
+
+/* Header and Navigation Bar Styling */
 header {
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    position: fixed;
-    top: 0;
+    background-color: rgb(10, 18, 41);
+    box-shadow: 0 2px 5px rgba(247, 244, 244, 0.851);
+    position: relative; /* Header fixed at the top */
+    top: -70px;
     width: 100%;
-    z-index: 1000;
+    height: 70px;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    z-index: 1000; /* Ensures header is above other elements */
 }
 
-nav {
+.navbar {
     display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+    justify-content: center;
     align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    position: absolute;
+    left: 20px; /* Position logo to the left */
+    top: 10px; /* Adjust as needed */
 }
 
 .logo img {
     height: 50px;
+    width: auto;
 }
 
-.nav-links {
-    list-style-type: none;
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 2px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 5px;
+    margin: 2px 0;
+    background-color: rgb(255, 255, 255);
+}
+.nav-links, .auth-buttons {
     display: flex;
+}
+
+.auth-buttons a {
+    margin-left: 25px;
+    list-style-type: none; /* Removes bullet points */
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 84px; /* Adjusted to be below the header */
+    left: 0;
+    right: 0;
+}
+.nav-links li{
+    margin-left: 25px;
+    list-style-type: none; /* Removes bullet points */
+    padding-top: 12px;
+    padding-right:12px;
 }
 
 .nav-links li a {
-    margin-left: 20px;
     text-decoration: none;
-    color: black;
+    color: rgb(250, 243, 243);
     font-weight: bold;
+    margin: 25px;
+    padding: 15px;
 }
 
-footer {
-    background-color: #333;
+.nav-links li a:hover {
+    background-color: #0046dc33;  
+    border-radius: 10px;
+    padding: 15px;
+   
+}
+.auth-buttons a {
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+.auth-buttons{
+    position: relative;
+    display: inline-block;
+    left: 85%;
+    top: -40px;
+}
+
+
+.learn-more, .youtube-link, .project-link {
+    background-color: #1a75ff; /* Button color */
     color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.learn-more:hover, .youtube-link:hover, .project-link:hover {
+    background-color: #0047b3; /* Button hover color */
+}
+
+.section-divider {
+    margin: 20px 0;
+    border-bottom: 2px solid #ddd; /* Change color as needed */
+    padding-bottom: 20px;
+}
+
+/* Add margin for vertical spacing */
+.what-i-do, .my-projects {
+    margin-bottom: 40px; /* Adjust as needed */
+    color: #FFFFFF;
+}
+
+/* Adjust spacing around headings, paragraphs, and links */
+h2, h1, p, a {
+    margin-bottom: 20px; /* Adds space below each element */
+}
+
+/* Ensure buttons have enough room and do not overlap */
+.learn-more, .youtube-link, .project-link {
+    display: inline-block; /* Allows to control spacing around buttons */
+    margin-right: 10px; /* Adds space to the right of each button */
+    
+}
+
+.what-i-do {
+    background-color: rgb(51, 85, 85);
+    width: 60vmax;
+    height: 15vmax;
+    display: inline-block;
+    position: relative;
+    text-align: justify;
+    top: 125px;
+    margin-left: 20%;
+    border-radius: 15px;
+    
+}
+
+.what-i-do li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.section-class {
+    background-color: #f2f2f2; /* Replace with your preferred color or use background-image for images */
+  }
+
+.container {
+    display: flex;
+    justify-content: space-between; /* This separates the child elements */
+    align-items: center; 
+    padding: 10px;
+  }
+  
+.video-container {
+    width: 50%; /* Adjust the width as necessary */
+    padding: 20px; /* This adds space around the video */
+    position: relative;
+    top: 100px;
+    border-radius:20%;
+  }
+  
+
+/* Rounded border */
+hr.rounded {
+    border-top: 5px solid #08284a;
+    border-radius: 5px;
+  }
+
+  .main-section {
+    background-color: rgba(10, 18, 41, 0.588); /* Blue overlay with opacity */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-decoration: double;
     text-align: center;
-    padding: 10px 0;
+    font-size: larger;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 98%; /* 70% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding-top: 12px; /* Offset for the fixed header */
+    position: absolute; /* For the overlay positioning */
+    top: 0px;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(8, 8, 8, 0.851);
+}
+.portfolio-section{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-decoration: double;
+    text-align: justify;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(12, 11, 11);
+    width: 100%;
+    height: 30%;
+    padding-top: 12px; /* Offset for the fixed header */
+    position: relative; /* For the overlay positioning */
+    top: 0px;
+    box-shadow: 0 2px 5px rgba(8, 8, 8, 0.345);
+}
+.overlay {
+    background-image: url('images/BG1.png'); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: absolute;
-    bottom: 0;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    z-index: 1; /* Below the text, above the image */
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    touch-action: auto;
+    animation-duration: 5s;
+    box-shadow: 0 2px 5px rgba(247, 244, 244, 0.851);
+
+}
+  
+  .content-below {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    /* Additional styling as needed */
+}
+.video-section{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    position: relative; /* For the overlay positioning */
+    top: 500px;
+    z-index: 1;  
+    padding: 20px; 
+}
+
+.about-section{
+    display: inline;
+    background-color: rgb(10, 18, 41); /* Blue overlay with opacity */
+    font-family: 'Times New Roman', Times, serif;
+    width: 70%;
+    font-size: 1.9vh;
+    height: 70vh;
+    align-items: center;
+    margin-left: 15%;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(252, 252, 253);
+    position: relative; /* For the overlay positioning */
+    top: 500px;
+    z-index: 1;  
+    padding: 30px; 
+    border-radius: 15px;
+}
+
+.about-section h1{
+    text-align: center;
+    font-size: 5vh;
+}
+
+.profile-pic{
+    background-color: #0d0a3d9f;
+    border-radius: 45%;
+    height: 450px;
+    margin-right: 30px;
+}
+.profile-img{
+    border-radius: 45%;
+    width: 300px;
+    height: 450px;
+}
+.hero-text h1{
+    margin-left: 0%;
+    font-size: 10dvh;
+    position: relative;
+    top: auto;
+}
+p.a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    word-break: break-all;
+}
+/* Footer Styling */
+
+.footer {
+    position: relative;
+    top: 40cqmax;
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(10, 18, 41);
+    color: white;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none; 
+    margin-left: 20px;
+}
+.footer-text{
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    text-decoration: none;
+    justify-content: space-around;
+    background-color: rgb(10, 18, 41);
+    color: white;
+    padding: 20px 0;
+    margin-right: 40%; 
     width: 100%;
 }
+  /* Responsive Design */
+@media screen and (max-width: 600px) {
 
-@media (max-width: 600px) {
-    .nav-links, .auth-buttons {
-        display: none;
+    .logo {
+        position: static; /* Reset logo position on smaller screens */
+        margin: 0 auto; /* Center logo on smaller screens */
     }
-    /* Additional responsive styles can be added here */
-}
+    .logo img {
+        display: block; /* Center logo image */
+        margin: 0 auto; /* Auto margins for centering */
+    }
 
-/* ... other styles ... */
-
-.intro, .what-i-do, .my-projects {
-    background: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-.learn-more, .youtube-channel, .watch-video {
-    background-color: #90ee90; /* Light green for buttons */
-    padding: 10px 15px;
-    text-decoration: none;
-    color: #000000;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@media (max-width: 768px) {
-    .content {
+    .nav-links,.hamburger-menu {
+        display: flex;
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        right: 20px; /* Place menu on the top right */
+    }
+    .nav-links {
+        display: none; /* Hide by default */
         flex-direction: column;
+        align-items: center;
+        background-color: rgb(11, 19, 45); /* Blue overlay with opacity */
+        font-family: 'Times New Roman', Times, serif;
+       
+    }
+    .auth-buttons {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8); /* Background for menu */
+        width: 100%; /* Full width for mobile view */
+        text-align: center; /* Center elements */
+    }
+
+   .auth-buttons a {
+        display: block; /* Stack the links */
+        margin-bottom: 10px;
+        text-align: center; /* Center-align the text */
+        padding: 10px 20px; /* Add padding for touch friendliness */
+        border-bottom: 1px solid #ddd; /* Optional: Add a separator */
+    }
+    .nav-links.active, .auth-buttons.active {
+        width: 45%;
+        position: relative;
+        top: 20px; /* Adjust as needed */  
+    }
+    .nav-links li{
+        display: block; /* Stack the links */
+        list-style-type: none; /* Removes bullet points */
+        padding-right:10px;
+        text-align: center; /* Center-align the text */
+        margin-bottom: 40px;
+    }
+    
+    .nav-links li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+    }
+    
+    .nav-links li a:hover {
+        background-color: #0046dc33;  
+       
+    }
+    .hamburger-menu span {
+        width: 25px;
+        height: 3px;
+    }
+
+    .what-i-do {
+        
+        width: 60%;
+        height: 52%;
+        
+        
+    }
+
+  
+    .main-section {
+        width: 100%;
+        padding-top: 2px; /* Offset for the fixed header */
+        position: absolute; /* For the overlay positioning */
+        top: 0px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(8, 8, 8, 0.851);
+    }
+   
+    .overlay {
+        position: absolute;
+        top: 0;
+        height: 70%;
+        z-index: 1; /* Below the text, above the image */
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        touch-action: auto;
+        animation-duration: 5s;
+        box-shadow: 0 2px 5px rgba(247, 244, 244, 0.851);
+    
+    }
+      
+    .portfolio-section{
+        height: 50%;
+        padding-top: 2%; /* Offset for the fixed header */
+        position: relative; /* For the overlay positioning */
+        top: 0px;
+        box-shadow: 0 2px 5px rgba(8, 8, 8, 0.345);
     }
 }
 
-/* ... additional responsive styles ... */
+@media screen and (max-width: 480px) {
 
+    .logo {
+        position: static; /* Reset logo position on smaller screens */
+        margin: 0 auto; /* Center logo on smaller screens */
+    }
+    .logo img {
+        display: block; /* Center logo image */
+        margin: 0 auto; /* Auto margins for centering */
+    }
 
-/* ... other styles ... */
+    .nav-links,.hamburger-menu {
+        display: flex;
+        position: absolute;
+        top: 20px; /* Adjust as needed */
+        right: 20px; /* Place menu on the top right */
+    }
+    .nav-links {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(11, 19, 45); /* Blue overlay with opacity */
+        font-family: 'Times New Roman', Times, serif;
+       
+    }
+    .auth-buttons {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.8); /* Background for menu */
+        width: 100%; /* Full width for mobile view */
+        text-align: center; /* Center elements */
+    }
 
-.intro-portfolio {
-    color: #fff; /* For white text */
-    background-color: #121212; /* Dark background for the intro section */
-    padding: 40px;
+   .auth-buttons a {
+        display: block; /* Stack the links */
+        margin-bottom: 10px;
+        text-align: center; /* Center-align the text */
+        padding: 10px 20px; /* Add padding for touch friendliness */
+        border-bottom: 1px solid #ddd; /* Optional: Add a separator */
+    }
+    .nav-links.active, .auth-buttons.active {
+        width: 45%;
+        position: relative;
+        top: 20px; /* Adjust as needed */  
+    }
+    .nav-links li{
+        display: block; /* Stack the links */
+        list-style-type: none; /* Removes bullet points */
+        padding-right:10px;
+        text-align: center; /* Center-align the text */
+        margin-bottom: 40px;
+    }
+    
+    .nav-links li a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-size: 1.5rem;
+    }
+    
+    .nav-links li a:hover {
+        background-color: #0046dc33;  
+       
+    }
+    .hamburger-menu span {
+        width: 25px;
+        height: 3px;
+    }
+
+    .what-i-do {
+        
+        width: 60%;
+        height: 52%;
+        
+        
+    }
+
+    .main-section {
+        width: 100%;
+        padding-top: 2px; /* Offset for the fixed header */
+        position: absolute; /* For the overlay positioning */
+        top: 0px;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(8, 8, 8, 0.851);
+    }
+   
+    .overlay {
+        position: absolute;
+        top: 0;
+        height: 70%;
+        z-index: 1; /* Below the text, above the image */
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+        touch-action: auto;
+        animation-duration: 5s;
+        box-shadow: 0 2px 5px rgba(247, 244, 244, 0.851);
+    
+    }
+      
+    .portfolio-section{
+        height: 50%;
+        padding-top: 2%; /* Offset for the fixed header */
+        position: relative; /* For the overlay positioning */
+        top: 0px;
+        box-shadow: 0 2px 5px rgba(8, 8, 8, 0.345);
+    }
 }
-
-.content-portfolio {
-    color: #fff;
-    background: linear-gradient(to right, #333, #1e5799); /* Gradient background for content */
-    padding: 40px;
-}
-
-/* ... other button styles ... */
-
-.learn-more {
-    background-color: #90ee90; /* Light green for buttons */
-    /* ... other styles ... */
-}
-
-/* ... additional responsive styles ... */

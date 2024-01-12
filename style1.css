@@ -1,0 +1,42 @@
+/* You will need to incorporate this with your existing styles.css file */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0f1d; /* Assuming a dark theme */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #FFD700; /* Gold color for headings */
+}
+
+.learn-more, .youtube-link, .project-link {
+    color: #FFD700; /* Gold color for links */
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.project-link {
+    display: block;
+    background-color: #333; /* Darker background for project links */
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+/* Add responsive design and additional specific styling as needed */

@@ -3,27 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adam's Portfolio</title>
+    <title>ITS_ADREX</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Add link to Lottie player library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js" integrity="sha512-m0RQU4SBx0p/bLwRiI4fJBGRafVLZ4s86wRe1+OAx5EXbcWiS/X1MfUeYj9lY1ZVpRKX8X0V5mB05lAaT7+t0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
-        <!-- Navigation bar here, consistent across all pages -->
-    </header>
-    <main>
-        <section class="intro-portfolio">
-            <h1>HELLO, I am Adam 👋</h1>
-            <h2>The everyday content creator</h2>
-            <p>I have dipped my toes in a whole lot on things and I just wish to share my passion for digital creation with the rest of the world, like my Gaming videos 👇:</p>
-            <a href="https://www.itsadrex.com" class="learn-more">Learn more ></a>
+        <div class="logo">
+            <a href="index.html"> 
+              <img src="images\Logo2.png" alt="Logo" />
+            </a>
+        </div>
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+            </ul>
+            <!-- Include authentication buttons if needed -->
+        </nav>
+         <div class="auth-buttons">
+                <a href="#login" class="login">Login</a>
+                <a href="#signup" class="signup">Sign Up</a>
+            </div>
+            </header>
+       <section class="portfolio-section">
+        <div class="image-video">
+            <a href="https://youtu.be/0ymCBA1Qpf4?si=pQuXRXpsXifDY6cs">
+                    <iframe width="400" height="250" style ="border-bottom-left-radius:10%" src="https://www.youtube.com/embed/0ymCBA1Qpf4?si=pQuXRXpsXifDY6cs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+        </div>
+        <div class="image-video">
+            <a href="https://youtu.be/iWkTqDpcq4o?si=veCgApYSRk-LfHKn">
+                    <iframe  style ="border-radius:10%" width="400" height="300" src="https://www.youtube.com/embed/iWkTqDpcq4o?si=veCgApYSRk-LfHKn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+        </div> 
+        <div class="image-video">
+            <a href="https://youtu.be/w9UNPdygDIg?si=Ljvl0L_JGrNychm8">
+                <iframe width="400" height="250" style ="border-bottom-right-radius:10%" src="https://www.youtube.com/embed/w9UNPdygDIg?si=Ljvl0L_JGrNychm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </a>
+        </div>
         </section>
-        <section class="content-portfolio">
-            <!-- Content and YouTube video will be embedded here -->
-        </section>
-    </main>
-    <footer>
-        <p>© 2024 Adam's Portfolio. All rights reserved.</p>
+        <section class="portfolio-section">
+            <div>
+                <h2>HELLO, I am Adam 👋</h2>
+                <h1>The everyday content creator</h1>
+                <p>I have dipped my toes in a whole lot of things and I just wish to share my passion for digital creation with the rest of the world, Like my Gaming videos 👇:</p>
+                <a href="https://www.itsadrex.com" class="learn-more">Learn more ></a>
+            </div> 
+        </section> 
+        <section class="portfolio-section">   
+            <div class="what-i-do">
+                <div class="container">
+                    <div class="column">
+                        <h3>What i do</h3>
+                        <p>On my YouTube channels i make:</p>
+                        <ul class="items_what-i-do">
+                            <li>Lets play Gaming videos</li>
+                            <li>Story time animations</li>
+                            <li>Gaming creation challenges and more...</li>
+                        </ul>
+                        <p>If you might be interested in any way do not hesitate to SUBSCRIBE TO any one of them... or maybe even all of them 🌚??</p>
+                        <a href="https://www.youtube.com/channel/UC5LtXPP_LeB_XfMOD9fql_w" class="youtube-link">YouTube Channel ></a>
+                    </div>
+                    <div class="column">
+                        <!-- Placeholder for Lottie animation -->
+                        <div id="lottie-animation"></div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+    <section class="my-projects">
+        <div class="container">
+            <div class="project">
+                
+              <!-- Placeholder for image -->
+                <a href="https://www.youtube.com/watch?v=iWkTqDpcq4o&list=PPSV" class="project-link">Watch Video...</a>
+                <div class="video-container">
+                    <iframe width="300" height="250" src="https://www.youtube.com/embed/iWkTqDpcq4o?si=yGVgl741380EV110" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
+                <!-- More projects can be added here -->
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div style="display: flex; justify-content: space-around; align-items: center;">
+            <div>
+                <img src="images/Logo2.png" alt="Logo" style="height: 50px;"> <!-- Replace with your logo path -->
+                <p>© 2023 Your Company Name. All rights reserved.</p>
+            </div>
+            <div>
+                <a href="#" >Features</a>
+                <a href="#">Premium</a>
+                <a href="#">Pricing</a>
+                <!-- More links -->
+            </div>
+            <div>
+                <a href="#">About</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <!-- More links -->
+            </div>
+            <div>
+                <a href="#">Image License Info</a>
+                <a href="#">Powered by Osadam.ink</a>
+            </div>
+            <div>
+                <!-- Social media icons -->
+            </div>
+        </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js"></script> 
 </body>
 </html>
