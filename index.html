@@ -1,126 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adam Oladiran — Software developer building modern web and mobile apps." />
+  <title>Adam Oladiran — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <div class="logo">   
-              <img src="images/Logo2.png" alt="Logo" />     
-        </div>
-        <nav class="navbar">
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#active">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-        </nav>
-        <div class="auth-buttons">
-            <a href="#login" class="login">Login</a>
-            <a href="#signup" class="signup">Sign Up</a>
-        </div>
-    </header>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">A</span>
+        <span>Adam Oladiran</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">☾</button>
+        <a href="contacts.html" class="btn btn-primary btn-sm">Hire Me</a>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <!-- Hero Section with Blue Overlay -->
-    <main>
-        <div class="overlay">
-            <section class="main-section">
-            <div class="hero-text">
-                <h1>Greetings!</h1>
-                <p>Hello there! 👋 <br>My name is Adam Oladiran. Welcome to my portfolio website. <br>Here, you'll find an extensive showcase of my journey and capabilities as a Programmer, Storytime Animator, and Content Creator.</p>            </div>
-            </section> 
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="hero-eyebrow"><span class="dot"></span> Available for new projects</div>
+          <h1>Software Developer building <span class="grad">modern web &amp; mobile apps</span>.</h1>
+          <p class="hero-lead">
+            Hi, I'm Adam Oladiran. I design and build fast, accessible, and beautiful
+            digital products — from polished marketing sites to full-stack web apps and
+            cross-platform mobile experiences.
+          </p>
+          <div class="hero-cta">
+            <a href="portfolio.html" class="btn btn-primary">View My Work →</a>
+            <a href="contacts.html" class="btn btn-ghost">Get in touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>5+</strong><span>Live web projects</span></div>
+            <div class="stat"><strong>6</strong><span>Mobile app builds</span></div>
+            <div class="stat"><strong>100%</strong><span>Hand-coded</span></div>
+          </div>
         </div>
-        <div class="content-below">
-            <!-- Additional content goes here -->
+
+        <div class="reveal">
+          <div class="code-card" aria-hidden="true">
+            <div class="code-card-bar"><i></i><i></i><i></i></div>
+<pre><span class="c">// adam.dev</span>
+<span class="k">const</span> <span class="v">adam</span> = {
+  <span class="v">role</span>: <span class="s">"Full-stack developer"</span>,
+  <span class="v">stack</span>: [<span class="s">"HTML"</span>, <span class="s">"CSS"</span>, <span class="s">"JS"</span>, <span class="s">"React"</span>, <span class="s">"Node"</span>],
+  <span class="v">mobile</span>: [<span class="s">"Flutter"</span>, <span class="s">"React Native"</span>],
+  <span class="v">building</span>: <span class="s">"things people love"</span>,
+};
+
+<span class="k">function</span> <span class="v">collaborate</span>() {
+  <span class="k">return</span> <span class="s">"Let's build something great →"</span>;
+}</pre>
+          </div>
         </div>
-    </main>
-    <section class="video-section">
-        <div class="image-video">
-            <a href="https://youtu.be/0ymCBA1Qpf4?si=pQuXRXpsXifDY6cs">
-                    <iframe width="400" height="250" style ="border-bottom-left-radius:10%" src="https://www.youtube.com/embed/0ymCBA1Qpf4?si=pQuXRXpsXifDY6cs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </a>
-            <p></p>
-        </div>
-        <div class="image-video">
-            <a href="https://youtu.be/iWkTqDpcq4o?si=veCgApYSRk-LfHKn">
-                    <iframe  style ="border-radius:10%" width="400" height="300" src="https://www.youtube.com/embed/iWkTqDpcq4o?si=veCgApYSRk-LfHKn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </a>
-            <p></p>
-        </div> 
-        <div class="image-video">
-            <a href="https://youtu.be/w9UNPdygDIg?si=Ljvl0L_JGrNychm8">
-                <iframe width="400" height="250" style ="border-bottom-right-radius:10%" src="https://www.youtube.com/embed/w9UNPdygDIg?si=Ljvl0L_JGrNychm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </a>
-            <p></p>
-        </div>
+      </div>
     </section>
-    <section class="about-section">
-        <div class="profile-pic" >
-            <img class="profile-img" src="images\PFP2.jpg" alt="Adam" />
-          </a>
+
+    <!-- What I Do -->
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">What I do</span>
+          <h2 class="section-title">Services</h2>
+          <p class="section-sub">End-to-end product development — from concept and UI design to deployment and maintenance.</p>
+        </div>
+        <div class="cards-3">
+          <article class="card reveal">
+            <div class="card-icon">⌘</div>
+            <h3>Web Apps</h3>
+            <p>Responsive websites and full-stack web apps built with modern JavaScript frameworks and clean, scalable code.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">▣</div>
+            <h3>Mobile Apps</h3>
+            <p>Cross-platform iOS &amp; Android apps using Flutter and React Native — one codebase, native feel.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon">✦</div>
+            <h3>Custom Software</h3>
+            <p>APIs, dashboards, and tailored tools to automate workflows and bring your business ideas to life.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Selected projects</h2>
+          <p class="section-sub">A handful of recent web builds. View the full collection on the portfolio page.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project reveal">
+            <div class="project-thumb"><img src="images/projects/anime-store.svg" alt="Anime Store preview" /></div>
+            <div class="project-body">
+              <h3>Anime Store</h3>
+              <p>E-commerce concept store for anime merchandise with curated collections.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+              <div class="project-actions">
+                <a href="https://theotakucity.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="portfolio.html" class="btn btn-ghost btn-sm">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-thumb"><img src="images/projects/gadget-store.svg" alt="Gadget Store preview" /></div>
+            <div class="project-body">
+              <h3>Gadget Store</h3>
+              <p>Modern tech-products storefront with category filters and a clean shopping flow.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+              <div class="project-actions">
+                <a href="https://kovagadget.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="portfolio.html" class="btn btn-ghost btn-sm">Details</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="project-thumb"><img src="images/projects/restaurant.svg" alt="Restaurant site preview" /></div>
+            <div class="project-body">
+              <h3>Restaurant</h3>
+              <p>Elegant restaurant site with menu showcase, reservations and location section.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+              <div class="project-actions">
+                <a href="https://solenerestorant.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="portfolio.html" class="btn btn-ghost btn-sm">Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Apps Strip -->
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Mobile</span>
+          <h2 class="section-title">Apps in motion</h2>
+          <p class="section-sub">A peek at mobile app projects. Real screenshots coming soon — placeholders below.</p>
+        </div>
+        <div class="apps-row">
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-1.svg" alt="App 1" /></div></div><div class="app-caption">Wallet App</div></div>
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-2.svg" alt="App 2" /></div></div><div class="app-caption">Fitness Tracker</div></div>
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-3.svg" alt="App 3" /></div></div><div class="app-caption">Food Delivery</div></div>
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-4.svg" alt="App 4" /></div></div><div class="app-caption">Music Player</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">About</span>
+          <h2 class="section-title">Hi, I'm Adam.</h2>
+        </div>
+        <div class="about reveal">
+          <div class="about-pic"><img src="images/PFP2.jpg" alt="Adam Oladiran" /></div>
+          <div>
+            <p>I'm a software developer focused on shipping polished web and mobile experiences. I love turning rough ideas into clean, working products — whether that's a marketing site, a full-stack web app, or a cross-platform mobile build.</p>
+            <p>My toolkit centers on HTML, CSS, JavaScript and modern frameworks like React and Node on the backend. For mobile, I work with Flutter and React Native to deliver one codebase across iOS and Android.</p>
+            <p>I care about details: performance, accessibility, and the small interactions that make a product feel great to use. If you've got a project in mind, I'd love to hear about it.</p>
+            <div class="hero-cta" style="margin-top: 1.5rem;">
+              <a href="contacts.html" class="btn btn-primary">Start a project</a>
+              <a href="portfolio.html" class="btn btn-ghost">See all work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Have an idea? Let's build it.</h2>
+          <p>Open to freelance work, collaborations, and full-time roles.</p>
+          <a href="contacts.html" class="btn btn-primary">Get in touch →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-mark">A</span><span>Adam Oladiran</span></a>
+          <p style="margin-top: 0.8rem; max-width: 320px;">Software developer crafting modern web &amp; mobile apps. Based remotely, working worldwide.</p>
         </div>
         <div>
-            <h1>About Me</h1>
-            <p>Hello and welcome! I'm Adam Oladiran, the creative mind behind 'It's Adrex' for content creation and 'Being Adam's Animation' in the world of storytime animation. My journey as a multifaceted digital artist and programmer has been an adventure of constant learning, creativity, and passion.</p>
-            <p>In the realm of content creation as 'It's Adrex,' I explore a diverse range of topics, delivering content that is not only informative but also engaging and entertaining. My aim is to connect with my audience through stories and experiences that resonate, using my unique voice to make each piece of content stand out.</p>
-            <p>As 'Being Adam's Animation,' I dive into the captivating world of animation. Here, I bring stories to life, combining my skills in programming with a flair for visual storytelling. Each animation is crafted with care, aiming to transport viewers into different worlds and experiences through the power of animated narratives.</p>
-            <p>My programming background plays a pivotal role in all my creative endeavors. It's the foundation that allows me to push the boundaries of what's possible in both content creation and animation. I am constantly experimenting with new techniques and technologies to enhance my work and provide a fresh perspective to my audience.</p>
-            <p>This website is a window into my world. It's a place where you can explore my projects, get a glimpse of my creative process, and understand what drives me as a creator. Whether it's through 'It's Adrex' or 'Being Adam's Animation,' my goal is to create content that informs, inspires, and entertains. So, dive in and enjoy the journey!</p>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
         </div>
-    </section>
-    <!-- Footer -->
-    <footer id="footer" class="footer">
         <div>
-            <div>
-                <img src="images/Logo2.png" alt="Logo" style="height: 50px;"> <!-- Replace with your logo path -->
-                <p>© 2023 Your Company Name. All rights reserved.</p>
-            </div>
-            <div class="footer-text">
-                <div class="pricing">
-                    <ul>
-                        <li><a href="#" >Features</a></li>
-                        <li><a href="#">Premium</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <!-- More links -->
-                    </ul>
-                </div>
-                <div class="contact">
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    <!-- More links -->
-                    </ul>
-                </div>
-                <div class="License">
-                    <ul>
-                        <li><a href="#">Image License Info</a></li>
-                        <li><a href="#">Powered by Osadam.ink</a></li>
-                    <!-- More links -->
-                    </ul>
-                </div>
-               
-             <!-- Social media icons -->
-                <div class="social-media">
-                    <ul>
-                        <li><a href="#">WhatsApp</a></li>
-                        <li><a href="#"><bold>X</bold></a></li>
-                        <li><a href="#">Intergram</a></li>
-                        <li><a href="#">Telegram</a></li>
-                    </ul>
-                </div>
-            </div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="portfolio.html">Web Apps</a></li>
+            <li><a href="portfolio.html">Mobile Apps</a></li>
+            <li><a href="portfolio.html">Custom Software</a></li>
+          </ul>
         </div>
-        
-    </footer>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noopener">X / Twitter</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span data-year>2025</span> Adam Oladiran. All rights reserved.</div>
+    </div>
+  </footer>
 
-    <script src="script.js"></script> 
+  <script src="script.js"></script>
 </body>
 </html>

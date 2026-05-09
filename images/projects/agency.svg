@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="rgba(255,255,255,0.18)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <g fill="rgba(255,255,255,0.95)" font-family="Inter, -apple-system, sans-serif" text-anchor="middledeclare -a P_N="for entry in "anime-store:Anime Store:#ff6aa9:#7c3aed agency:Creative Agency:#22d3ee:#6366f1 gadget-store:Gadget Store:#34d399:#0ea5e9 real-estate:Real Estate:#f59e0b:#ef4444 restaurant:Restaurant:#fb7185:#f59e0b"; do
+  IFS=":" read -r slug label c1 c2 <<< "agency:Creative Agency:#22d3ee:#6366f1"
+  cat > "images/projects/agency.svg" <<EOF
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <ff  IFS=":" read -r slug label c19:  cat > "images/projects/agency.svg" <<EOF
+<sus<svg xmlns="http://www.w3.org/2000/svg" vi#3  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-colol     <li<<      <stop offset="0%" stop-color="#22d3ee"/>
+      <vg x      <stop offset="100%" stop-color="#6366f10     </linearGradient>
+    <pattern id="dots" e"    <pattern id="dotar      <circle cx="2" cy="2" r="1.2" fill="rgba(255,255,255,0.18)"/>
+    </col    </pa}"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </li  </defs>
+  <
+   <rect 
+   <rect width="800" height="500" fill="url(#dots
+   <g fill="rgba(255,255,255,0.95)" font-family="Intr,  IFS=":" read -r slug label c1 c2 <<< "agency:Creative Agency:#22d3ee:#6366f1"
+  cat > "images/projects/agency.svg" <<EOF
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800"1  cat > "images/projects/agency.svg" <<EOF
+<s{l<svg xmlns="http://www.w3.org/2000/sv" font-  <ff  IFS=":" read -r slug label c19:  cat > "images/projects/agency.svg" <<EOF
+<sus<svg xmlns x="<sus<svg xmlns="http://www.w3.org/2000/svg" vi#3  <defs>
+    <linearGradient id=0"    <linearGradient id="g" x1="0" y1="0" x2="1" y2="h="28      <stop offset="0%" stop-colol     <li<<      <sto"       <vg x      <stop offset fill="rgba(255,255,255,0.5)"/>
+</svg>

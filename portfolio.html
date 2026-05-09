@@ -1,130 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITS_ADREX</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Add link to Lottie player library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js" integrity="sha512-m0RQU4SBx0p/bLwRiI4fJBGRafVLZ4s86wRe1+OAx5EXbcWiS/X1MfUeYj9lY1ZVpRKX8X0V5mB05lAaT7+t0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of web and mobile projects by Adam Oladiran." />
+  <title>Portfolio — Adam Oladiran</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!--
+    DEMO URL PLACEHOLDERS — replace with real URLs after deploying:
+    ANIME_STORE_URL   = https://theotakucity.netlify.app
+    AGENCY_URL        = https://off-studio.netlify.app
+    GADGET_STORE_URL  = https://kovagadget.netlify.app
+    REAL_ESTATE_URL   = https://ileluxury.netlify.app
+    RESTAURANT_URL    = https://solenerestorant.netlify.app
+  -->
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html"> 
-              <img src="images\Logo2.png" alt="Logo" />
-            </a>
-        </div>
-        <nav class="navbar">
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-            </ul>
-            <!-- Include authentication buttons if needed -->
-        </nav>
-         <div class="auth-buttons">
-                <a href="#login" class="login">Login</a>
-                <a href="#signup" class="signup">Sign Up</a>
-            </div>
-            </header>
-       <section class="portfolio-section">
-        <div class="image-video">
-            <a href="https://youtu.be/0ymCBA1Qpf4?si=pQuXRXpsXifDY6cs">
-                    <iframe width="400" height="250" style ="border-bottom-left-radius:10%" src="https://www.youtube.com/embed/0ymCBA1Qpf4?si=pQuXRXpsXifDY6cs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </a>
-        </div>
-        <div class="image-video">
-            <a href="https://youtu.be/iWkTqDpcq4o?si=veCgApYSRk-LfHKn">
-                    <iframe  style ="border-radius:10%" width="400" height="300" src="https://www.youtube.com/embed/iWkTqDpcq4o?si=veCgApYSRk-LfHKn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </a>
-        </div> 
-        <div class="image-video">
-            <a href="https://youtu.be/w9UNPdygDIg?si=Ljvl0L_JGrNychm8">
-                <iframe width="400" height="250" style ="border-bottom-right-radius:10%" src="https://www.youtube.com/embed/w9UNPdygDIg?si=Ljvl0L_JGrNychm8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </a>
-        </div>
-        </section>
-        <section class="portfolio-section">
-            <div>
-                <h2>HELLO, I am Adam 👋</h2>
-                <h1>The everyday content creator</h1>
-                <p>I have dipped my toes in a whole lot of things and I just wish to share my passion for digital creation with the rest of the world, Like my Gaming videos 👇:</p>
-                <a href="https://www.itsadrex.com" class="learn-more">Learn more ></a>
-            </div> 
-        </section> 
-        <section class="portfolio-section">   
-            <div class="what-i-do">
-                <div class="container">
-                    <div class="column">
-                        <h3>What i do</h3>
-                        <p>On my YouTube channels i make:</p>
-                        <ul class="items_what-i-do">
-                            <li>Lets play Gaming videos</li>
-                            <li>Story time animations</li>
-                            <li>Gaming creation challenges and more...</li>
-                        </ul>
-                        <p>If you might be interested in any way do not hesitate to SUBSCRIBE TO any one of them... or maybe even all of them 🌚??</p>
-                        <a href="https://www.youtube.com/channel/UC5LtXPP_LeB_XfMOD9fql_w" class="youtube-link">YouTube Channel ></a>
-                    </div>
-                    <div class="column">
-                        <!-- Placeholder for Lottie animation -->
-                        <div id="lottie-animation"></div>
-                    </div>
-                </div>
-            </div>
-        </section> 
-    <section class="my-projects">
-        <div class="container">
-            <div class="project">
-                
-              <!-- Placeholder for image -->
-                <a href="https://www.youtube.com/watch?v=iWkTqDpcq4o&list=PPSV" class="project-link">Watch Video...</a>
-                <div class="video-container">
-                    <iframe width="300" height="250" src="https://www.youtube.com/embed/iWkTqDpcq4o?si=yGVgl741380EV110" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-                
-                <!-- More projects can be added here -->
-            </div>
-        </div>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">A</span>
+        <span>Adam Oladiran</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html" class="active">Portfolio</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle theme">☾</button>
+        <a href="contacts.html" class="btn btn-primary btn-sm">Hire Me</a>
+        <button class="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container reveal">
+        <div class="hero-eyebrow"><span class="dot"></span> Live demos &amp; mobile builds</div>
+        <h1>Portfolio</h1>
+        <p class="hero-lead">A collection of web projects and mobile app builds. Click any project to launch its live demo.</p>
+      </div>
     </section>
 
- 
-    <!-- Footer -->
-    <footer id="footer" class="footer">
-        <div style="display: flex; justify-content: space-around; align-items: center;">
-            <div>
-                <img src="images/Logo2.png" alt="Logo" style="height: 50px;"> <!-- Replace with your logo path -->
-                <p>© 2023 Your Company Name. All rights reserved.</p>
-            </div>
-            <div>
-                <a href="#" >Features</a>
-                <a href="#">Premium</a>
-                <a href="#">Pricing</a>
-                <!-- More links -->
-            </div>
-            <div>
-                <a href="#">About</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
-                <!-- More links -->
-            </div>
-            <div>
-                <a href="#">Image License Info</a>
-                <a href="#">Powered by Osadam.ink</a>
-            </div>
-            <div>
-                <!-- Social media icons -->
-            </div>
+    <!-- Web Projects -->
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Web Projects</span>
+          <h2 class="section-title">Recent web builds</h2>
+          <p class="section-sub">Five demo sites covering e-commerce, hospitality, agencies and real estate.</p>
         </div>
-    </footer>
 
-    <script src="script.js"></script> 
+        <div class="filters reveal">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="ecommerce">E-commerce</button>
+          <button class="chip" data-filter="agency">Agency</button>
+          <button class="chip" data-filter="realestate">Real Estate</button>
+          <button class="chip" data-filter="hospitality">Hospitality</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project reveal" data-tags="ecommerce">
+            <div class="project-thumb"><img src="images/projects/anime-store.svg" alt="Anime Store preview" /></div>
+            <div class="project-body">
+              <h3>Anime Store</h3>
+              <p>An e-commerce concept for anime merchandise — collections, product cards and a smooth shopping flow.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">E-commerce</span></div>
+              <div class="project-actions">
+                <a href="https://theotakucity.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-ghost btn-sm">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="agency">
+            <div class="project-thumb"><img src="images/projects/agency.svg" alt="Agency site preview" /></div>
+            <div class="project-body">
+              <h3>Creative Agency</h3>
+              <p>A bold marketing site for a creative agency, focused on services, case studies and conversion.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Marketing</span></div>
+              <div class="project-actions">
+                <a href="https://off-studio.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-ghost btn-sm">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="ecommerce">
+            <div class="project-thumb"><img src="images/projects/gadget-store.svg" alt="Gadget Store preview" /></div>
+            <div class="project-body">
+              <h3>Gadget Store</h3>
+              <p>A modern tech-products storefront with category filters, product grids and a clean checkout vibe.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">E-commerce</span></div>
+              <div class="project-actions">
+                <a href="https://kovagadget.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-ghost btn-sm">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="realestate">
+            <div class="project-thumb"><img src="images/projects/real-estate.svg" alt="Real Estate site preview" /></div>
+            <div class="project-body">
+              <h3>Real Estate</h3>
+              <p>Property listings with hero search, featured estates and a clean agent-friendly layout.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Listings</span></div>
+              <div class="project-actions">
+                <a href="https://ileluxury.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-ghost btn-sm">Source</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-tags="hospitality">
+            <div class="project-thumb"><img src="images/projects/restaurant.svg" alt="Restaurant site preview" /></div>
+            <div class="project-body">
+              <h3>Restaurant</h3>
+              <p>An elegant restaurant site featuring menu showcase, reservations and a warm visual identity.</p>
+              <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Hospitality</span></div>
+              <div class="project-actions">
+                <a href="https://solenerestorant.netlify.app" target="_blank" rel="noopener" class="btn btn-primary btn-sm">Live Demo</a>
+                <a href="#" class="btn btn-ghost btn-sm">Source</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile Apps -->
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Mobile Apps</span>
+          <h2 class="section-title">App builds &amp; concepts</h2>
+          <p class="section-sub">Cross-platform builds with Flutter and React Native. Real screenshots coming soon — placeholders below.</p>
+        </div>
+
+        <div class="apps-row">
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-1.svg" alt="App 1" /></div></div><div class="app-caption">Wallet App</div></div>
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-2.svg" alt="App 2" /></div></div><div class="app-caption">Fitness Tracker</div></div>
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-3.svg" alt="App 3" /></div></div><div class="app-caption">Food Delivery</div></div>
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-4.svg" alt="App 4" /></div></div><div class="app-caption">Music Player</div></div>
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-5.svg" alt="App 5" /></div></div><div class="app-caption">Travel Planner</div></div>
+          <div class="reveal"><div class="phone"><div class="phone-screen"><img src="images/apps/app-6.svg" alt="App 6" /></div></div><div class="app-caption">Task Manager</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section">
+      <div class="container">
+        <div class="reveal">
+          <span class="section-tag">Tech</span>
+          <h2 class="section-title">Tools &amp; technologies</h2>
+          <p class="section-sub">The stack I reach for most often when building products.</p>
+        </div>
+        <div class="skills reveal">
+          <span class="skill">HTML5</span>
+          <span class="skill">CSS3</span>
+          <span class="skill">JavaScript</span>
+          <span class="skill">TypeScript</span>
+          <span class="skill">React</span>
+          <span class="skill">Node.js</span>
+          <span class="skill">Express</span>
+          <span class="skill">Tailwind</span>
+          <span class="skill">Flutter</span>
+          <span class="skill">React Native</span>
+          <span class="skill">Firebase</span>
+          <span class="skill">PostgreSQL</span>
+          <span class="skill">MongoDB</span>
+          <span class="skill">Git &amp; GitHub</span>
+          <span class="skill">Figma</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Like what you see?</h2>
+          <p>I'm available for freelance and contract work. Let's talk about your project.</p>
+          <a href="contacts.html" class="btn btn-primary">Contact me →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="logo"><span class="logo-mark">A</span><span>Adam Oladiran</span></a>
+          <p style="margin-top: 0.8rem; max-width: 320px;">Software developer crafting modern web &amp; mobile apps. Based remotely, working worldwide.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul>
+            <li><a href="portfolio.html">Web Apps</a></li>
+            <li><a href="portfolio.html">Mobile Apps</a></li>
+            <li><a href="portfolio.html">Custom Software</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="#" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noopener">X / Twitter</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© <span data-year>2025</span> Adam Oladiran. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
