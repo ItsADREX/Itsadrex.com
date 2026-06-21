@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { contact } from '../data/projects.js';
+import { brand, contact } from '../data/projects.js';
 import Reveal from '../components/Reveal.jsx';
+import Avatar from '../components/Avatar.jsx';
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -42,12 +43,13 @@ export default function Contact() {
         <div className="max-w-[1200px] mx-auto px-5">
           <div className="grid gap-10 md:grid-cols-2">
             <Reveal>
+              <Avatar size="md" className="mb-4 max-w-[120px]" />
               <span className="section-tag">Contact</span>
               <h2 className="text-2xl font-bold mb-4" style={{ color: 'var(--ink)' }}>
                 Get in touch
               </h2>
               <p style={{ color: 'var(--dim)' }}>
-                Prefer email or social? Reach me directly:
+                Prefer email or social? Reach {brand.handle} directly:
               </p>
               <ul className="flex flex-col gap-2 mt-4 text-[0.95rem]">
                 <li>

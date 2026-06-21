@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" role="img" aria-label="JobAI Ready preview">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="800" fill="url(#bg)"/>
+  <rect x="80" y="120" width="520" height="36" rx="8" fill="#ffffff12"/>
+  <rect x="80" y="200" width="720" height="48" rx="10" fill="url(#accent)" opacity="0.9"/>
+  <rect x="80" y="280" width="480" height="24" rx="6" fill="#ffffff18"/>
+  <rect x="80" y="320" width="400" height="24" rx="6" fill="#ffffff10"/>
+  <rect x="80" y="400" width="280" height="160" rx="16" fill="#ffffff0d" stroke="#6366f155" stroke-width="2"/>
+  <rect x="390" y="400" width="280" height="160" rx="16" fill="#ffffff0d" stroke="#6366f155" stroke-width="2"/>
+  <rect x="700" y="400" width="280" height="160" rx="16" fill="#ffffff0d" stroke="#6366f155" stroke-width="2"/>
+  <text x="80" y="90" fill="#e2e8f0" font-family="system-ui,sans-serif" font-size="42" font-weight="800">JobAI Ready</text>
+  <text x="80" y="130" fill="#94a3b8" font-family="system-ui,sans-serif" font-size="22">AI-powered learning platform</text>
+</svg>

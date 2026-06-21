@@ -1,7 +1,8 @@
 import { useMemo, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { projects, filterOptions, apps, skills } from '../data/projects.js';
 import Reveal from '../components/Reveal.jsx';
-import ProjectCard from '../components/ProjectCard.jsx';
+import ProjectCard, { AppCard } from '../components/ProjectCard.jsx';
 import PhoneFrame from '../components/PhoneFrame.jsx';
 import CTA from '../components/CTA.jsx';
 
@@ -26,9 +27,8 @@ export default function Portfolio() {
               Portfolio
             </h1>
             <p className="mt-4 text-lg max-w-[640px]" style={{ color: 'var(--dim)' }}>
-              A collection of real, deployed web projects and mobile app builds.
-              Each card shows a live preview — hover and click to open the full
-              site.
+              Production platforms, client work, showcase sites, and experiments.
+              Each live project opens in a new tab — hover cards with previews to explore.
             </p>
           </Reveal>
         </div>
@@ -66,20 +66,34 @@ export default function Portfolio() {
           <Reveal>
             <span className="section-tag">Mobile Apps</span>
             <h2 className="text-3xl font-bold mb-2" style={{ color: 'var(--ink)' }}>
-              App builds &amp; concepts
+              App Lab
             </h2>
             <p className="max-w-[640px] mb-10" style={{ color: 'var(--dim)' }}>
-              Cross-platform builds with Flutter and React Native. Real
-              screenshots coming soon — placeholders below.
+              Flutter mobile builds — screenshots, feature lists, and beta access
+              requests. Not on the stores yet, but ready to explore.
             </p>
           </Reveal>
 
-          <div className="grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+          <div className="grid gap-6 md:grid-cols-3 mb-10">
             {apps.map((app, i) => (
               <Reveal key={app.slug} delay={i * 0.05}>
+                <AppCard app={app} />
+              </Reveal>
+            ))}
+          </div>
+
+          <div className="grid gap-6 grid-cols-1 sm:grid-cols-3">
+            {apps.map((app, i) => (
+              <Reveal key={`frame-${app.slug}`} delay={i * 0.05}>
                 <PhoneFrame app={app} />
               </Reveal>
             ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <Link to="/apps" className="btn btn-ghost">
+              Open full App Lab →
+            </Link>
           </div>
         </div>
       </section>

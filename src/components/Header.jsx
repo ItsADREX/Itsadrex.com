@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { brand } from '../data/projects.js';
 import ThemeToggle from './ThemeToggle.jsx';
+import Avatar from './Avatar.jsx';
 
 const links = [
   { to: '/', label: 'Home', end: true },
   { to: '/portfolio', label: 'Portfolio' },
+  { to: '/apps', label: 'App Lab' },
   { to: '/blog', label: 'Blog' },
   { to: '/contact', label: 'Contact' },
 ];
@@ -30,14 +33,16 @@ export default function Header() {
       }}
     >
       <div className="max-w-[1200px] mx-auto px-5 h-[72px] flex items-center justify-between gap-4">
-        <Link to="/" className="flex items-center gap-2 font-bold" style={{ color: 'var(--ink)' }}>
-          <span className="w-8 h-8 grid place-items-center rounded-lg bg-gradient-to-br from-accent to-accent-2 text-white font-extrabold shadow-glow">
-            A
+        <Link to="/" className="flex items-center gap-2.5 font-bold" style={{ color: 'var(--ink)' }}>
+          <Avatar size="sm" className="!w-9 !h-9 !rounded-lg !text-sm" />
+          <span className="leading-tight">
+            <span className="block text-[0.95rem]">{brand.handle}</span>
+            <span className="block text-[0.72rem] font-normal" style={{ color: 'var(--dim)' }}>
+              {brand.name}
+            </span>
           </span>
-          <span>Adam Oladiran</span>
         </Link>
 
-        {/* Desktop nav */}
         <nav className="hidden md:block">
           <ul className="flex gap-6">
             {links.map((l) => (
@@ -109,7 +114,6 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {open && (
           <motion.nav

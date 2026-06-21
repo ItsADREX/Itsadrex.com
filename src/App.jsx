@@ -4,6 +4,8 @@ import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
 import Home from './pages/Home.jsx';
 import Portfolio from './pages/Portfolio.jsx';
+import Apps from './pages/Apps.jsx';
+import AppDetail from './pages/AppDetail.jsx';
 import Blog from './pages/Blog.jsx';
 import Contact from './pages/Contact.jsx';
 
@@ -37,6 +39,8 @@ export default function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<PageWrap><Home /></PageWrap>} />
             <Route path="/portfolio" element={<PageWrap><Portfolio /></PageWrap>} />
+            <Route path="/apps" element={<PageWrap><Apps /></PageWrap>} />
+            <Route path="/apps/:slug" element={<PageWrap><AppDetail /></PageWrap>} />
             <Route path="/blog" element={<PageWrap><Blog /></PageWrap>} />
             <Route path="/contact" element={<PageWrap><Contact /></PageWrap>} />
             <Route path="*" element={<PageWrap><Home /></PageWrap>} />
